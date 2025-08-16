@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="results-container">
+        <h1>Test Results</h1>
+
+        <div id="summary">
+            <h2>Overall Dapar Score: <span id="dapar-score">Loading...</span></h2>
+            <p>Status: <span id="test-status">Loading...</span></p>
+        </div>
+
+        <div id="chapter-breakdown">
+            <h2>Results by Chapter</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Chapter</th>
+                        <th>Score</th>
+                        <th>Avg. Difficulty</th>
+                        <th>Success Rate (%)</th>
+                        <th>Avg. Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated by results.js -->
+                </tbody>
+            </table>
+        </div>
+        <p id="error-message" class="hidden"></p>
+    </div>
+
+    <script src="/static/results.js"></script>
+</body>
+</html>

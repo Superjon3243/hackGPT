@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#auth-container, #test-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 8px;
+}
+
+#options-container {
+    margin-top: 10px;
+}
+
+.option {
+    margin: 5px 0;
+}

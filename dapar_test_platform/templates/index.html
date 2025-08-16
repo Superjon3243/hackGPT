@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapar Test Platform</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Dapar Psychometric Test</h1>
+
+    <div id="auth-container">
+        <h2>Login / Register</h2>
+        <div id="login-form">
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+        </div>
+        <div id="register-form">
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="password" id="register-password" placeholder="Password">
+            <button id="register-btn">Register</button>
+        </div>
+        <p id="auth-message"></p>
+    </div>
+
+    <div id="test-container" class="hidden">
+        <h2>Test Section</h2>
+        <div id="start-test-container">
+            <p>Ready to begin? The test consists of 4 chapters and will take approximately 60 minutes.</p>
+            <button id="start-full-test-btn">Start Full Test</button>
+        </div>
+
+        <div id="test-area" class="hidden">
+            <div class="test-header">
+                <h3 id="chapter-title"></h3>
+                <div id="timer">Time Left: <span></span></div>
+            </div>
+            <div id="question-container">
+                <p id="question-text"></p>
+                <div id="options-container"></div>
+            </div>
+            <button id="submit-answer-btn">Submit Answer</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
